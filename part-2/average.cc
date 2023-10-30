@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
   double total{0};
   int num{0};
   bool first{true};
-  for (std::string argument : arguments) {
+  for (const std::string& argument : arguments) {
     if (first) {
       first = false;
       continue;
