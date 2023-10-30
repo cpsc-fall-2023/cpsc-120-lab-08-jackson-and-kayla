@@ -26,7 +26,7 @@ int main(int argc, char* argv[]) {
   // Each argument is a std::string. You will need to convert each string into
   // a number with the std::stod or std::stof function.
   double total{0};
-  int n{0};
+  int num{0};
   bool first{true};
   for (std::string argument : arguments) {
     if (first) {
@@ -35,13 +35,13 @@ int main(int argc, char* argv[]) {
     }
     double number(std::stod(argument));
     total += number;
-    ++n;
+    ++num;
   }
 
   // After the loop has finished summing the arguments, calculate the
   // average of the values. Recall that the average is the total value divided
   // by the number of values.
-  double average = total / n;
+  double average = total / num;
 
   // Use cout to print out a message of the form
   // average = *AVERAGE*
